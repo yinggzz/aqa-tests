@@ -18,5 +18,6 @@ TEST_SUITE=$1
 
 set -e
 echo "Compile and execute netty-test" && \
+mvn -v
 mvn clean package
 set +e
