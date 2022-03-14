@@ -19,10 +19,10 @@ echo_setup
 cd org.jacoco.build
 pwd
 echo "Compile and run jacoco tests"
-mvn clean verify
+#mvn clean verify
 test_exit_code=$?
 echo "Build jacoco completed"
-
+mvn -v
 find ./ -type d -name 'surefire-reports' -exec cp -r "{}" /testResults \;
 echo "Test results copied"
 
